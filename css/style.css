@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pathway+Gothic+One&display=swap');
+
+.logo img {
+    height: 70px;
+    width: 275px;
+    vertical-align: middle;  
+}
+.container {
+    height: 70px; 
+    background-color: #0D7877;
+    color: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;    
+}
+
+ul {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+

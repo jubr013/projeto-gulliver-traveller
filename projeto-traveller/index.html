@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Traveller</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--header>
+        <div class="container">
+            <div class="logo">
+                <img src="imagens/LOGO PROJ GULLIVER.png">
+            </div>
+
+            <div class="pontos-turisticos"> Pontos Turísticos</div>
+
+            <nav>
+                <ul class="projeto">
+                    <li>
+                    O Projeto
+                    <ul class="submenu">
+                        <li>Sobre nós</li>
+                        <li>Fale Conosco</li>                
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <!--formulário-->
+    
+    <h1>Cadastro do Ponto Turístico</h1>
+    <fieldset>
+        <legend> <h2>Suas Informações</h2></legend>
+
+        <form action="" method="post" id="dados" name="dados">
+            <p>
+                <label for="name">Nome:</label> 
+                <input type="text" id="name" placeholder="Maria">
+                
+                <label for="surname">Sobrenome:</label> 
+                <input type="text" id="surname" placeholder="Santos">            
+            </p>
+
+            <p>    
+                <label for="email">E-mail:</label> 
+                <input type="text" id="email" placeholder="maria.santos@email.com.br">
+            </p>
+
+            <p>
+                <label for="origin">Origem:</label> 
+                <input type="text" id="origin" placeholder="Rio de Janeiro, RJ">
+            </p>         
+        </form>
+    </fieldset>    
+
+    <fieldset>
+        <legend> <h2>Ponto Turístico</h2></legend>
+
+        <form action="" method="post" id="ponto-turistico" name="ponto-turistico">
+        
+            <p>
+                <label for="user">Nome:</label> 
+                <input type="text" id="user" placeholder="MASP">
+
+                <label for="type">Tipo:</label> 
+                <select id="type">
+                    <option value="selecione1" disabled selected>Selecione</option>
+                    <option value="outro">Outro</option>
+                    <option value="estatua">Estátua</option>
+                    <option value="exposicao">Exposição</option>
+                    <option value="igreja">Igreja</option>
+                    <option value="montanha">Montanha</option>
+                    <option value="museu">Museu</option>
+                    <option value="mural">Mural</option>
+                    <option value="praia">Praia</option>
+                    <option value="praca">Praça</option>
+                    <option value="pq">Parque</option>
+                    <option value="pqaquatico">Parque Aquático</option>
+                    <option value="pqdiversoes">Parque de Diversões</option>
+                    <option value="shopping">Shopping</option>                    
+                </select>
+            
+            </p>
+
+            <p>
+                <label for="city">Cidade:</label> 
+                <input type="text" id="city" placeholder="São Paulo">
+
+                <label for="state">Estado:</label> 
+                <input list="state" id="brasil">
+                <datalist id="state">
+                    <option value="selecione3" disabled selected>Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </datalist>
+            </p>
+
+            <p>    
+                <label for="pay">Paga Para Entrar?</label> 
+                <input type="radio" name="paga" id="pay1"> 
+                <label for="pay1">Sim</label>                
+                
+                <input type="radio" name="paga" id="pay2"> 
+                <label for="pay2">Não</label>
+
+                <label for="price">Valor:</label> 
+                <input type="number" id="price" placeholder="15">
+            </p>   
+            
+            <p>
+                <label for="date">Data da Visita:</label>
+                <input type="date" id="date">
+
+                <label for="funcionamento"> Funcionamento: </label>
+                <input type="text" id="funcionamento" placeholder="terça à domingo, 10h às 18h">
+            </p>    
+
+            <p>
+                <label for="how">Como Chegar:</label> 
+                <select id="type">
+                    <option value="selecione2" disabled selected>Selecione</option>
+                    <option value="outro2">Outro</option>
+                    <option value="ape">A pé</option>
+                    <option value="aviao">Avião</option>
+                    <option value="barco">Barco</option>
+                    <option value="carro">Carro</option>
+                    <option value="metro">Metrô</option>
+                    <option value="onibus">Ônibus</option>
+                    <option value="trem">Trem</option>
+                </select>
+
+                <label for="access">Facilidade do Acesso:</label> 
+                <input type="checkbox" id="access"> 
+                <label for="facil">Fácil</label>
+
+                <input type="checkbox" id="access"> 
+                <label for="medio">Médio</label>
+
+                <input type="checkbox" id="access"> 
+                <label for="dificil">Difícil</label>
+            </p>    
+            
+            <p>
+                <label for="url">Site Oficial:</label> 
+                <input type="url" id="url" placeholder="https://masp.org.br/">
+            </p>
+            
+            <p>
+                <label for="pics">Envie Suas Fotos:</label> 
+                <input type="file" id="pics">
+            </p>     
+        </form>
+
+        <button type="submit">Enviar! </button>
+    </fieldset>
+
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <title>Hotel</title>
+</head>
+<body>
+    <header class="header_principal">
+        <section>
+            <h2 class="header_titulo">Gulliver.com</h2>
+        </section>
+        <nav class="menu_principal">
+            <ul class="menu">
+                <li class="menu_item active"><a href=""><i class="fas fa-home"></i>Home</a></li>
+                <li class="menu_item"><a href="#voos"><i class="fas fa-plane"></i>Como Chegar</a></li>
+                <li class="menu_item"><a href="#hospedagem"><i class="fas fa-hotel"></i>Onde se Hospedar</a></li> 
+                               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <header class="container">
+            <section>
+                <h2 class="header_titulo">Renaissance São Paulo Hotel</h2>
+            </section>
+            <nav class="menu_hospedagem">
+                <ul class="hotel_menu">
+                    <li class="menu_item"><a href="#info">Informações</a></li>
+                    <li class="menu_item"><a href="#comodidades">Comodidades</a></li>
+                    <li class="menu_item"><a href="#preco">Preço</a></li>
+                    <li class="menu_item"><a href="#avaliacoes">Avaliações</a></li>                   
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <div class="container" id="hospedagem">
+                <div class="form">
+                    <p>
+                        <i class="fas fa-hotel"></i>
+                        Hospedagens com reserva flexível </br>
+                    </p>                
+                    
+                    <p>
+                        <label for="destino">Destino</label> 
+                        <input type="text" id="destino" placeholder="São Paulo">
+                        
+                        <label for="date">Entrada:</label>
+                        <input type="date" id="date" value="2021-05-01">
+    
+                        <label for="date">Saída:</label>
+                        <input type="date" id="date" value="2021-05-02">
+                    </p>
+    
+                    <p>
+                        <label for="menores">Adultos:</label> 
+                        <input type="number" id="adulto2" placeholder="2">
+    
+                        <label for="menores">Crianças:</label> 
+                        <input type="number" id="crianca" placeholder="0">
+    
+                        <label for="menores">Quartos:</label> 
+                        <input type="number" id="quarto" placeholder="1">
+                    </p>
+    
+                        
+                    <p class="box_paragrafo">
+                        <a href="" class="box_link">Modificar!</a> 
+                    </p>
+                </div>
+
+                <div class="imagens">
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2673064254263!2d-46.664646485543045!3d-23.558841267383144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c89e6dca17%3A0xb62609d26a3a7180!2sRenaissance%20S%C3%A3o%20Paulo%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1619545920466!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    
+                    <img class="renaissance" src="imagens/renaissance.jpg" alt="">
+
+                </div>    
+            </div>        
+        </div>
+
+        <div class="container" id="info">
+            <h2>Informações</h2> </br>
+            <p>
+                Desfrute ao máximo sua estada e hospede-se no charmoso bairro do Jardins, a poucos passos da icônica Av. Paulista e aos melhores bares e restaurantes da cidade. Aproveite as experiências exclusivas no bar e restaurante do hotel, que celebram a gastronomia Paulistana. Relaxe no The Spa at Renaissance e mantenha a rotina de exercícios em dia no Renaissance Fitness. Além de uma piscina externa climatizada que completam o andar dedicado ao bem-estar. São Paulo é uma das cidades mais vibrantes, coloridas e culturais, não só do Brasil, mas também do mundo e, nos Jardins, é local ideal para vivenciar essa experiência. Há sempre algo novo para conhecer de dia ou de noite. Explore os arredores do hotel, com lojas de designers premiados, galerias de artes, bares e restaurantes renomados. </br>
+                <i class="fas fa-sign-in-alt"></i> Check-in: 14h </br>
+                <i class="fas fa-sign-out-alt"></i> Check-out: 12h </br>
+                <i class="fas fa-mug-hot"></i> Café da Manhã: 06h às 10h </br>
+            </p>
+        </div>
+
+        <div class="container" id="comodidades">
+            <h2>Comodidades</h2> </br>
+            <p>
+                <i class="fas fa-swimmer"></i> Piscina </br>
+                <i class="fas fa-smoking-ban"></i> Quartos para não fumantes</br>
+                <i class="fas fa-spa"></i> Spa</br>
+                <i class="fas fa-concierge-bell"></i>Serviço de quarto</br>
+                <i class="fas fa-wifi"></i> Wi-Fi</br>
+                <i class="fas fa-wheelchair"></i> Comodidades para hóspedes com mobilidade reduzida</br>
+            </p>               
+        </div>
+
+        <div class="container" id="preco">
+            <h2>Preços</h2>
+            </br>
+
+            <table>
+                <tr>
+                    <th>Tipo do Quarto</th>
+                    <th>Acomoda</th>
+                    <th>Preço por Noite</th>
+                    <th>Detalhes</th>
+                    <th>Número de Quartos</th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Quarto com 2 Camas de Casal</h4>
+                        </br>
+                        <p>
+                            2 Camas de Casal <i class="fas fa-bed"></i> <i class="fas fa-bed"></i>
+                        </p>
+
+                        <h6>
+                            </br>
+                            Ar-Condicionado <i class="far fa-snowflake"></i> TV <i class="fas fa-tv"></i> </br>
+                            Frigobar <i class="fas fa-utensils"></i>  Banheiro no quarto <i class="fas fa-shower"></i>
+                        </h6>
+                    </th>
+
+                    <th>
+                        <i class="fas fa-user"></i><i class="fas fa-user"></i>
+                    </th>
+
+                    <th>
+                        R$703,00
+                        <h6>+ R$11,00 em impostos e taxas </h6>
+                    </th>
+
+                    <th>
+                        <i class="fas fa-check"></i> Reserva Flexível </br></br>
+                        <i class="fas fa-mug-hot"></i> Café da Manhã</br></br>
+                        <i class="fas fa-check"></i> Cancelamento grátis</br>
+                        <h6>até 24horas antes do check-in </h6>
+                    </th>
+
+                    <th>
+                        <label for="type">Quartos:</label> 
+                            <select id="type">
+                                <option value="selecione1" disabled selected>Selecione</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <p class="box_paragrafo">
+                                <a href="" class="box_link">Reservar!</a> 
+                        </p>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <h4>Quarto com 1 Camas de Casal</h4>
+                        </br>
+                        <p>
+                            1 Camas de Casal <i class="fas fa-bed"></i> 
+                        </p>
+
+                        <h6>
+                            </br>
+                            Ar-Condicionado <i class="far fa-snowflake"></i> TV <i class="fas fa-tv"></i> </br>
+                            Frigobar <i class="fas fa-utensils"></i>  Banheiro no quarto <i class="fas fa-shower"></i>
+                        </h6>
+                    </th>
+
+                    <th>
+                        <i class="fas fa-user"></i><i class="fas fa-user"></i>
+                    </th>
+
+                    <th>
+                        R$699,00
+                        <h6>+ R$11,00 em impostos e taxas </h6>
+                    </th>
+
+                    <th>
+                        <i class="fas fa-check"></i> Reserva Flexível </br></br>
+                        <i class="fas fa-mug-hot"></i> Café da Manhã</br></br>
+                        <i class="fas fa-check"></i> Cancelamento grátis</br>
+                        <h6>até 24horas antes do check-in </h6>
+                    </th>
+
+                    <th>
+                        <label for="type">Quartos:</label> 
+                            <select id="type">
+                                <option value="selecione1" disabled selected>Selecione</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <p class="box_paragrafo">
+                                <a href="" class="box_link">Reservar!</a> 
+                        </p>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+        
+        <div class="container" id="avaliacoes">
+            <h2>Avaliações</h2>
+
+            <div class="conteudo">
+                <section class="box">
+                    <h2 class="box_titulo">TAYLOR</h2>
+                    <p class="box_paragrafo">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam assumenda omnis libero! Et provident reiciendis laudantium dicta necessitatibus molestiae praesentium.
+                    </p>               
+                    
+                </section>           
+                
+                <section class="box">
+                    <h2 class="box_titulo">Já se hospedeu aqui?</h2>
+                    
+                    <input type="text" name="Mensagem" size="40" placeholder="Sua Avaliação" />
+
+                    <p class="box_paragrafo">
+                        <a href="" class="box_link">Avaliar!</a> 
+                    </p>
+                    
+                </section>           
+            </div>         
+      
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="myscripts.js"></script>
+</body>
+</html>

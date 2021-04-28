@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <title>Hospedagem</title>
+</head>
+<body>
+    <header class="header_principal">
+        <section>
+            <h2 class="header_titulo">Gulliver.com</h2>
+        </section>
+        <nav class="menu_principal">
+            <ul class="menu">
+                <li class="menu_item active"><a href=""><i class="fas fa-home"></i>Home</a></li>
+                <li class="menu_item"><a href="#voos"><i class="fas fa-plane"></i>Como Chegar</a></li>
+                <li class="menu_item"><a href="#hospedagem"><i class="fas fa-hotel"></i>Onde se Hospedar</a></li> 
+                               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--início form voos-->
+        <div class="container" id="voos">
+                                 
+            <div class="form">
+                <p>
+                    <i class="fas fa-plane"></i>
+                    Passagens aéreas com reserva flexível    
+                    <input type="radio" name="idaevolta" id="idaevolta"> 
+                    <label for="idaevolta">Ida e Volta</label>                
+                    
+                    <input type="radio" name="ida" id="ida"> 
+                    <label for="ida">Somente Ida</label>
+
+                    <input type="radio" name="multi" id="multi"> 
+                    <label for="multi">Multi-City</label>                
+                </p>
+                
+                <form action="" method="post" id="origem" name="origem">
+                    <p>
+                        <label for="origem">De</label> 
+                        <input type="text" id="origem" placeholder="Rio de Janeiro">
+                        
+                        <label for="destino">Para</label> 
+                        <input type="text" id="destino" placeholder="São Paulo">
+                        
+                        <label for="type">Bagagem:</label> 
+                            <select id="type">
+                                <option value="selecione1" disabled selected>Selecione</option>
+                                <option value="sembagagem">Sem Bagagem</option>
+                                <option value="malademao">Mala de Mão</option>
+                                <option value="malaum">01 mala de 23kg</option>
+                                <option value="maladois">02 malas de 23kg</option>
+                            </select>
+                    </p>
+                
+                <p>
+                        <label for="date">Ida:</label>
+                        <input type="date" id="date">
+
+                        <label for="date">Volta:</label>
+                        <input type="date" id="date">
+
+                        <label for="type">Classe:</label> 
+                            <select id="type">
+                                <option value="selecione1" disabled selected>Selecione</option>
+                                <option value="economica">Econômica</option>
+                                <option value="premium">Premium</option>
+                                <option value="executiva">Executiva</option>
+                                <option value="primeira">Primeira Classe</option>
+                            </select>
+                </p>
+
+                <p>
+                    <label for="adultos">Adultos:</label> 
+                    <input type="number" id="adulto1" placeholder="1">
+
+                    <label for="menores">Menores de 17 anos:</label> 
+                    <input type="number" id="menor" placeholder="0">
+
+                    <p class="box_paragrafo">
+                        <a href="" class="box_link">Buscar!</a> 
+                </p>
+            </div>
+        </div>
+
+        <!--fim form voos-->
+
+        <!--início box informações-->
+
+        <div class="conteudo">
+            <!--Section 1-->
+            <section class="box">
+                <h2 class="box_titulo">Flexível <i class="box_icone fas fa-exchange-alt"></i> </h2>
+                <p class="box_paragrafo">
+                    Reserve agora, decida se vai viajar depois!
+                </p>
+                
+                <p class="box_paragrafo">
+                    <a href="" class="box_link">Saiba Mais</a>
+                </p>
+            </section>
+            <!--fim Section 1-->
+
+            <!--Section 2-->
+            <section class="box">
+                <h2 class="box_titulo">Restrições <i class="box_icone fas fa-ban"></i></h2>
+                <p class="box_paragrafo">
+                    Verifique se há restrições no seu destino.
+                </p>
+                
+                <p class="box_paragrafo">
+                    <a href="" class="box_link">Saiba Mais</a>
+                </p>
+            </section>
+            <!--fim Section 2-->
+
+            <!--Section 3-->
+            <section class="box">
+                <h2 class="box_titulo">Reembolsos <i class="box_icone fas fa-money-check-alt"></i> </h2>
+                <p class="box_paragrafo">
+                    Confira nossa política de reembolsos.
+                </p>
+                
+                <p class="box_paragrafo">
+                    <a href="" class="box_link">Saiba Mais</a>
+                </p>
+            </section>
+            <!--fim Section 3-->
+        </div>
+
+        <!--fim box informações-->
+
+        <!--início form hospedagem-->
+
+        <div class="container" id="hospedagem">
+            <div class="form">
+                <p>
+                    <i class="fas fa-hotel"></i>
+                    Hospedagens com reserva flexível </br>
+                </p>                
+                
+                <p>
+                    <label for="destino">Destino</label> 
+                    <input type="text" id="destino" placeholder="São Paulo">
+                    
+                    <label for="date">Entrada:</label>
+                    <input type="date" id="date">
+
+                    <label for="date">Saída:</label>
+                    <input type="date" id="date">
+                </p>
+
+                <p>
+                    <label for="menores">Adultos:</label> 
+                    <input type="number" id="adulto2" placeholder="0">
+
+                    <label for="menores">Crianças:</label> 
+                    <input type="number" id="crianca" placeholder="0">
+
+                    <label for="menores">Quartos:</label> 
+                    <input type="number" id="quarto" placeholder="0">
+                </p>
+
+                    
+                <p class="box_paragrafo">
+                    <a href="" class="box_link">Buscar!</a> 
+                </p>
+            </div>                                         
+        </div>        
+    </main>
+
+    <!--fim form hospedagem-->
+
+    <!--início footer-->
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

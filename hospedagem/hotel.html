@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     </head>
     <title>Hotel</title>
@@ -26,14 +27,12 @@
 
     <main>
 
-        <header class="container">
-            <section>
-                <h2 class="header_titulo">Renaissance São Paulo Hotel</h2>
-            </section>
+        <header class="header_">                      
             <nav class="menu_hospedagem">
                 <ul class="hotel_menu">
                     <li class="menu_item"><a href="#info">Informações</a></li>
                     <li class="menu_item"><a href="#comodidades">Comodidades</a></li>
+                    <li class="menu_item"><a href="#comodidades">Localização</a></li>
                     <li class="menu_item"><a href="#preco">Preço</a></li>
                     <li class="menu_item"><a href="#avaliacoes">Avaliações</a></li>                   
                 </ul>
@@ -42,6 +41,15 @@
 
         <div>
             <div class="container" id="hospedagem">
+                <section>
+                    <h3 class="header_titulo">Renaissance São Paulo Hotel</h3>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>   
+                </section>      
+
                 <div class="form">
                     <p>
                         <i class="fas fa-hotel"></i>
@@ -76,10 +84,8 @@
                     </p>
                 </div>
 
-                <div class="imagens">
-                
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2673064254263!2d-46.664646485543045!3d-23.558841267383144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c89e6dca17%3A0xb62609d26a3a7180!2sRenaissance%20S%C3%A3o%20Paulo%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1619545920466!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    
+                <div class="imagens">                     
+                                        
                     <img class="renaissance" src="imagens/renaissance.jpg" alt="">
 
                 </div>    
@@ -94,9 +100,10 @@
                 <i class="fas fa-sign-out-alt"></i> Check-out: 12h </br>
                 <i class="fas fa-mug-hot"></i> Café da Manhã: 06h às 10h </br>
             </p>
-        </div>
-
+        </div>  
+      
         <div class="container" id="comodidades">
+            
             <h2>Comodidades</h2> </br>
             <p>
                 <i class="fas fa-swimmer"></i> Piscina </br>
@@ -105,17 +112,22 @@
                 <i class="fas fa-concierge-bell"></i>Serviço de quarto</br>
                 <i class="fas fa-wifi"></i> Wi-Fi</br>
                 <i class="fas fa-wheelchair"></i> Comodidades para hóspedes com mobilidade reduzida</br>
-            </p>               
+            </p>
+            
         </div>
-
+        
+        <div class="container" id="comodidades">            
+            <h2>Localização</h2> </br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2673064254263!2d-46.664646485543045!3d-23.558841267383144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c89e6dca17%3A0xb62609d26a3a7180!2sRenaissance%20S%C3%A3o%20Paulo%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1619545920466!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+  
         <div class="container" id="preco">
             <h2>Preços</h2>
             </br>
 
-            <table>
+            <table class="rtable">
                 <tr>
-                    <th>Tipo do Quarto</th>
-                    <th>Acomoda</th>
+                    <th>Tipo do Quarto</th>                    
                     <th>Preço por Noite</th>
                     <th>Detalhes</th>
                     <th>Número de Quartos</th>
@@ -126,18 +138,17 @@
                         </br>
                         <p>
                             2 Camas de Casal <i class="fas fa-bed"></i> <i class="fas fa-bed"></i>
-                        </p>
+                        </br>
+                        </br>
+                        Acomoda <i class="fas fa-user"></i><i class="fas fa-user"></i> 
+                         </p>                        
 
                         <h6>
                             </br>
                             Ar-Condicionado <i class="far fa-snowflake"></i> TV <i class="fas fa-tv"></i> </br>
                             Frigobar <i class="fas fa-utensils"></i>  Banheiro no quarto <i class="fas fa-shower"></i>
                         </h6>
-                    </th>
-
-                    <th>
-                        <i class="fas fa-user"></i><i class="fas fa-user"></i>
-                    </th>
+                    </th>                    
 
                     <th>
                         R$703,00
@@ -171,19 +182,18 @@
                         <h4>Quarto com 1 Camas de Casal</h4>
                         </br>
                         <p>
-                            1 Camas de Casal <i class="fas fa-bed"></i> 
-                        </p>
+                            1 Camas de Casal <i class="fas fa-bed"></i>
+                            </br>
+                            </br>
+                            Acomoda <i class="fas fa-user"></i><i class="fas fa-user"></i> 
+                        </p>                       
 
                         <h6>
                             </br>
                             Ar-Condicionado <i class="far fa-snowflake"></i> TV <i class="fas fa-tv"></i> </br>
                             Frigobar <i class="fas fa-utensils"></i>  Banheiro no quarto <i class="fas fa-shower"></i>
                         </h6>
-                    </th>
-
-                    <th>
-                        <i class="fas fa-user"></i><i class="fas fa-user"></i>
-                    </th>
+                    </th>                   
 
                     <th>
                         R$699,00
@@ -223,17 +233,20 @@
                     <h2 class="box_titulo">TAYLOR</h2>
                     <p class="box_paragrafo">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam assumenda omnis libero! Et provident reiciendis laudantium dicta necessitatibus molestiae praesentium.
-                    </p>               
-                    
-                </section>           
-                
+                    </p>           
+                </section>             
+                                
                 <section class="box">
                     <h2 class="box_titulo">Já se hospedeu aqui?</h2>
                     
-                    <input type="text" name="Mensagem" size="40" placeholder="Sua Avaliação" />
+                    <input type="text" name="Mensagem" size="30" placeholder="Sua Avaliação" />
 
                     <p class="box_paragrafo">
                         <a href="" class="box_link">Avaliar!</a> 
+                    </p>
+
+                    <p>
+                        Nota geral das avaliações: 9,2
                     </p>
                     
                 </section>           

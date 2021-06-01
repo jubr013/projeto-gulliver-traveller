@@ -1,0 +1,39 @@
+
+body {
+    background-color: #F5B579;
+}
+
+.cor_navbar {
+    background-color: #012626;
+}
+
+.estrela {
+    color: #428c7f;
+}
+
+.bg-modal {
+    background-color: #428c7f;;
+}
+
+.buttons {
+    background-color: #D9751E;
+    color: #f2d06b;
+    font-weight: bold;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+

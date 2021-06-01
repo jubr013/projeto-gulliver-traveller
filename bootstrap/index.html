@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Traveller</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg cor_navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">Gulliver.com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Como Chegar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Onde se Hospedar</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Passeios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Culturais</a></li>
+                  <li><a class="dropdown-item" href="#">Parques</a></li>
+                  <li><a class="dropdown-item" href="#">Entretenimento</a></li>
+                </ul>
+              </li>              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn buttons" type="submit">Pesquisar!</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+     <div class="container my-3">
+        <h2>
+            Passeios: Culturais
+        </h2>
+     </div>
+
+     <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="imagens/masp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MASP</h5>
+                  <p class="card-text">Av. Paulista, 1578 - Bela Vista <br>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                  </p>
+                  <button type="button" class="btn buttons" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Saber Mais!
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog ">
+                      <div class="modal-content bg-modal">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-light" id="exampleModalLabel">MASP</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-light">
+                            <p>
+                                O Museu de Arte de São Paulo é um museu privado sem fins lucrativos, fundado em 1947 pelo empresário e mecenas Assis Chateaubriand (1892-1968), tornando-se o primeiro museu moderno no país. O MASP é considerado hoje o Museu de arte mais importante do Hemisfério Sul, com cerca de 10.000 peças, abrangendo arte africana, das Américas, asiática, brasileira e europeia, desde a Antiguidade até o século 21, incluindo pinturas, esculturas, desenhos, fotografias e roupas, entre outros. <br>
+                                <br>
+                                <strong>Horário de funcionamento: </strong> <br>
+                                Terça, Sábado e Domingo: 10h às 18h<br>
+                                Quarta, Quinta e Sexta: 12h às 18h<br>
+                                <br>
+                                <strong>Valores:</strong> <br>
+                                Inteira: R$45,00 <br>
+                                Meia-entrada: R$ 22,00 <br>
+                                Terça-feira entrada de graça mediante reserva online de ingressos.<br>
+                                <br>
+                                <strong>Localização:</strong>
+                            </p>
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14628.782787138132!2d-46.6558819!3d-23.561414!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe904f6a669744da1!2sMuseu%20de%20Arte%20de%20S%C3%A3o%20Paulo%20Assis%20Chateaubriand!5e0!3m2!1spt-BR!2sbr!4v1622580040469!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn buttons" data-bs-dismiss="modal">Fechar!</button>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="imagens/itaú_cultural.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Itaú Cultural</h5>
+                  <p class="card-text">Av. Paulista, 149 - Bela Vista<br>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                  </p>
+                  <a href="#" class="btn buttons">Saber Mais!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="imagens/conj_nacional.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Conjunto Nacional</h5>
+                  <p class="card-text">Av. Paulista, 2073 - Bela Vista<br>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                  </p>
+                  <a href="#" class="btn buttons">Saber Mais!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="imagens/casa_rosas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Casa das Rosas</h5>
+                  <p class="card-text">Av. Paulista, 37 - Bela Vista<br>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                  </p>
+                  <a href="#" class="btn buttons">Saber Mais!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                  <img src="imagens/teatro_gazeta.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Teatro Gazeta</h5>
+                    <p class="card-text">Av. Paulista, 900 - Bela Vista<br>
+                        <i class="fas fa-star estrela"></i>
+                        <i class="fas fa-star estrela"></i>
+                        <i class="fas fa-star estrela"></i>
+                        <i class="fas fa-star estrela"></i>
+                    </p>
+                    <a href="#" class="btn buttons">Saber Mais!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="imagens/fiesp.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Centro Cultural FIESP</h5>
+                    <p class="card-text">Av. Paulista, 1313 - Bela Vista<br>
+                        <i class="fas fa-star estrela"></i>
+                        <i class="fas fa-star estrela"></i>
+                        <i class="fas fa-star estrela"></i>
+                    </p>
+                    <a href="#" class="btn buttons">Saber Mais!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="imagens/caixa_belas.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Caixa Belas Artes</h5>
+                    <p class="card-text">R. da Consolação, 2423 - Consolação<br>
+                        <i class="fas fa-star estrela"></i>
+                        <i class="fas fa-star estrela"></i>
+                        <i class="fas fa-star estrela"></i>
+                    </p>
+                    <a href="#" class="btn buttons">Saber Mais!</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+     </div>
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
